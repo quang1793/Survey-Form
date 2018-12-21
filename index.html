@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+	<main id="main">
+		<h1 id="title">Survey Form</h1>
+		<div id="form-outer">
+			<p id="description">Let us know how we can improve freeCodeCamp</p>
+			<form id="survey-form" action="#" method="post">
+				<div class="row-form">
+					<div class="left-row">
+						<label class="labels" id="name-label">* Name: </label>
+					</div>
+					<div class="right-row">
+						<input type="text" id="name" class="inputs" name="name" value="" placeholder="enter your name" required>
+					</div>
+				</div>
+				<div class="row-form">
+					<div class="left-row">
+						<label class="labels" id="email-label">* Email: </label>
+					</div>
+					<div class="right-row">
+						<input type="email" id="email" class="inputs" name="email" value="" placeholder="enter your email" required>
+					</div>
+				</div>
+				<div class="row-form">
+					<div class="left-row">
+						<label class="labels" id="number-label">* Age: </label>
+					</div>
+					<div class="right-row">
+						<input type="number" id="number" class="inputs" name="age" value="" placeholder="enter your age from 6 to 100" min="6" max="100" required>
+					</div>
+				</div>
+				<div class="row-form">
+					<div class="left-row">
+						<label class="labels">Which option best describes your current role?</label>
+					</div>
+					<div class="right-row">
+						<select name="" class="selects" id="dropdown">
+							<option value="">Intern</option>
+							<option value="">Part time</option>
+							<option value="">Full time</option>
+							<option value="">Junior</option>
+							<option value="">Senior</option>
+						</select>
+					</div>
+				</div>
+				<div class="row-form">
+					<div class="left-row">
+						<label class="labels">How likely is that you would recommend freeCodeCamp to a friend?</label>
+					</div>
+					<div class="right-row">
+						<ul class="lists">
+							<li>
+								<label>Definitely
+									<input type="radio" name="radio-buttons" class="lists-buttons" value="1" placeholder="">
+								</label>
+							</li>
+							<li>
+								<label>Maybe
+									<input type="radio" name="radio-buttons" class="lists-buttons" value="2" placeholder="">
+								</label>
+							</li>
+							<li>
+								<label>Not sure
+									<input type="radio" name="radio-buttons" class="lists-buttons" value="3" placeholder="">
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row-form">
+					<div class="left-row">
+						<label class="labels">Things that should be improved in the future<br>(Check all that apply):</label>
+					</div>
+					<div class="right-row">
+						<ul class="lists">
+							<li>
+								<label>Front-end
+									<input type="checkbox" class="lists-buttons" value="1" placeholder="">
+								</label>
+							</li>
+							<li>
+								<label>Back-end
+									<input type="checkbox" class="lists-buttons" value="2" placeholder="">
+								</label>
+							</li>
+							<li>
+								<label>Full-stack
+									<input type="checkbox" class="lists-buttons" value="3" placeholder="">
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row-form">
+					<div class="left-row">
+						<label class="labels">Any Comments or Suggestions?</label>
+					</div>
+					<div class="right-row">
+						<textarea name="" class="inputs" id="input-area"></textarea>
+					</div>
+				</div>
+				<input type="submit" id="submit" name="Submit" value="Submit">
+			</form>
+		</div>
+	</main>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+		
+	</script>
+</body>
+</html>
